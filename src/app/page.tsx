@@ -56,27 +56,84 @@ const ventures = [
 
 const publications = [
   {
-    title: "Plant transformation methods and compositions",
+    title: "DNA delivery by high aspect ratio nanomaterials to algal chloroplasts",
+    type: "Publication",
+    citation: "Environmental Science: Nano, 10(10), 2890–2903",
+    year: "2023",
+    href: "https://doi.org/10.1039/d3en00018d",
+    pdf: null,
+  },
+  {
+    title: "Nanotechnology Approaches for Arabidopsis and Chlamydomonas Chloroplast Bioengineering",
+    type: "PhD Dissertation",
+    citation: "University of California, Riverside",
+    year: "2023",
+    href: "https://scholar.google.com/citations?user=sI--g3gAAAAJ",
+    pdf: null,
+  },
+  {
+    title: "Chloroplast targeting peptides and conjugates and compositions thereof",
+    type: "U.S. Patent Application",
+    citation: "US Patent App. 18/070,288",
+    year: "2023",
+    href: "https://patents.google.com/patent/US20230183756A1",
+    pdf: null,
+  },
+  {
+    title: "Targeted carbon nanostructures for chemical and gene delivery to plant chloroplasts",
+    type: "Publication",
+    citation: "ACS Nano, 16(8), 12156–12173",
+    year: "2022",
+    href: "https://doi.org/10.1021/acsnano.2c05522",
+    pdf: null,
+  },
+  {
+    title: "Nanotechnology approaches for chloroplast biotechnology advancements",
+    type: "Publication",
+    citation: "Frontiers in Plant Science, 12, 691295",
+    year: "2021",
+    href: "https://doi.org/10.3389/fpls.2021.691295",
+    pdf: "https://www.frontiersin.org/articles/10.3389/fpls.2021.691295/pdf",
+  },
+  {
+    title: "Compositions comprising a nanoparticle, a molecular basket comprising cyclodextrin, and a chloroplast-targeting peptide",
     type: "U.S. Patent",
-    citation: "US Patent 11,186,845 B1",
+    citation: "US Patent 11,186,845",
     year: "2021",
     href: "https://patents.google.com/patent/US11186845B1",
+    pdf: null,
   },
   {
-    title:
-      "Targeted delivery of CRISPR-Cas9 ribonucleoprotein complexes using lipid nanoparticles",
+    title: "Nanoparticle-mediated genetic engineering of plants",
     type: "Publication",
-    citation: "Nature Nanotechnology",
-    year: "",
-    href: "#",
+    citation: "Molecular Plant, 12(8), 1037–1040",
+    year: "2019",
+    href: "https://doi.org/10.1016/j.molp.2019.06.010",
+    pdf: "https://www.cell.com/action/showPdf?pii=S1674-2052%2819%2930231-X",
   },
   {
-    title:
-      "Gold nanoparticle-mediated delivery of molecular cargo for biological applications",
+    title: "Nanobiotechnology approaches for engineering smart plant sensors",
     type: "Publication",
-    citation: "ACS Nano",
-    year: "",
-    href: "#",
+    citation: "Nature Nanotechnology, 14(6), 541–553",
+    year: "2019",
+    href: "https://doi.org/10.1038/s41565-019-0470-6",
+    pdf: null,
+  },
+  {
+    title: "Catalytic scavenging of plant reactive oxygen species in vivo by anionic cerium oxide nanoparticles",
+    type: "Publication",
+    citation: "Journal of Visualized Experiments (JoVE), 58373",
+    year: "2018",
+    href: "https://doi.org/10.3791/58373",
+    pdf: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6231912/pdf",
+  },
+  {
+    title: "A 2018 Ballot Measure Analysis for Voters: The CA Water Bond and its Impact on Scientific Research",
+    type: "Publication",
+    citation: "Journal of Science Policy and Governance, 13",
+    year: "2018",
+    href: "https://scholar.google.com/citations?user=sI--g3gAAAAJ",
+    pdf: null,
   },
 ];
 
@@ -236,42 +293,56 @@ export default function Home() {
           </h2>
           <div className="space-y-8">
             {publications.map((p) => (
-              <a
-                key={p.title}
-                href={p.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group block"
-              >
+              <div key={p.title} className="group">
                 <div className="flex items-start gap-4">
                   <div className="flex-1">
                     <span className="text-xs font-medium tracking-wider uppercase text-[var(--color-accent)]">
                       {p.type}
                     </span>
-                    <h3 className="text-lg font-medium mt-1 group-hover:text-[var(--color-accent)] transition-colors">
-                      {p.title}
-                    </h3>
+                    <a
+                      href={p.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block"
+                    >
+                      <h3 className="text-lg font-medium mt-1 hover:text-[var(--color-accent)] transition-colors">
+                        {p.title}
+                      </h3>
+                    </a>
                     <p className="text-[var(--color-muted)] text-sm mt-1">
                       {p.citation}
                       {p.year && ` (${p.year})`}
                     </p>
+                    <div className="flex gap-3 mt-3">
+                      <a
+                        href={p.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 text-xs text-[var(--color-muted)] hover:text-[var(--color-accent)] transition-colors"
+                      >
+                        <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                        View
+                      </a>
+                      {p.pdf && (
+                        <a
+                          href={p.pdf}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1.5 text-xs text-[var(--color-accent)] hover:text-[var(--color-accent-light)] transition-colors font-medium"
+                        >
+                          <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                          </svg>
+                          PDF
+                        </a>
+                      )}
+                    </div>
                   </div>
-                  <svg
-                    className="w-4 h-4 text-[var(--color-muted)] group-hover:text-[var(--color-accent)] transition-colors mt-2 shrink-0"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                    />
-                  </svg>
                 </div>
                 <div className="border-b border-[var(--color-surface-light)]/30 mt-6" />
-              </a>
+              </div>
             ))}
           </div>
         </div>
