@@ -117,7 +117,7 @@ const publications = [
     citation: "Nature Nanotechnology, 14(6), 541–553",
     year: "2019",
     href: "https://doi.org/10.1038/s41565-019-0470-6",
-    pdf: null,
+    pdf: "/pdfs/Newkirk_2019_NatureNanotechnology_SmartPlantSensors.pdf",
   },
   {
     title: "Catalytic scavenging of plant reactive oxygen species in vivo by anionic cerium oxide nanoparticles",
