@@ -1,4 +1,3 @@
-import Image from "next/image";
 
 const socials = [
   {
@@ -164,18 +163,6 @@ export default function Home() {
       {/* Hero */}
       <section className="min-h-screen flex items-center justify-center px-6">
         <div className="max-w-3xl mx-auto text-center">
-          <div className="mb-8 flex justify-center">
-            <div className="w-40 h-40 rounded-full overflow-hidden border-2 border-[var(--color-surface-light)]">
-              <Image
-                src="/headshot-placeholder.svg"
-                alt="Dr. Gregory M. Newkirk"
-                width={160}
-                height={160}
-                className="w-full h-full object-cover"
-                priority
-              />
-            </div>
-          </div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-4">
             Dr. Gregory M. Newkirk
             <span className="text-[var(--color-accent)]">,</span> PhD
