@@ -8,21 +8,31 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Dr. Gregory M. Newkirk, PhD — Molecular Biologist, Science Communicator, Founder",
+  metadataBase: new URL("https://gregnewkirk.com"),
+  title: "Gregory M. Newkirk, PhD | Molecular Biology, Biotech IP, Science Communication",
   description:
-    "Personal site of Dr. Gregory M. Newkirk — molecular biologist, science communicator (@drgregshow), and founder of Priori Intelligence and SAFE.",
+    "Professional site of Gregory M. Newkirk, PhD, molecular biologist, biotech IP consultant, science communicator, and founder of Priori Intelligence.",
   openGraph: {
-    title: "Dr. Gregory M. Newkirk, PhD",
+    title: "Gregory M. Newkirk, PhD",
     description:
-      "Molecular biologist. Science communicator. Founder.",
+      "Molecular biology, biotech IP, and science communication with a record in plant nanobiotechnology.",
     url: "https://gregnewkirk.com",
     siteName: "Greg Newkirk",
     type: "website",
+    images: [
+      {
+        url: "/images/greg-newkirk-expert.jpg",
+        width: 2160,
+        height: 1440,
+        alt: "Gregory M. Newkirk professional portrait",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dr. Gregory M. Newkirk, PhD",
-    description: "Molecular biologist. Science communicator. Founder.",
+    title: "Gregory M. Newkirk, PhD",
+    description: "Molecular biology, biotech IP, and science communication.",
+    images: ["/images/greg-newkirk-expert.jpg"],
   },
 };
 
