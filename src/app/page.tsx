@@ -348,12 +348,12 @@ export default function Home() {
           </div>
           <div className="space-y-5 text-lg leading-8 text-[var(--color-body)]">
             <p>
-              I am a molecular biologist with deep expertise in CRISPR/Cas9 gene
-              editing, nanotechnology-mediated delivery systems, and plant genomics.
-              My PhD work focused on targeted genome modification, with publications
-              in <em>Nature Nanotechnology</em> and <em>ACS Nano</em>, and I am a
-              co-inventor on U.S. Patent 11,186,845 covering plant transformation
-              methods.
+              I&apos;m a molecular biologist. For my PhD at UC Riverside I built
+              nanomaterials that carry DNA and chemicals into the chloroplasts of
+              plants and algae. That work is published in <em>Nature Nanotechnology</em>{" "}
+              and <em>ACS Nano</em>, and I&apos;m a co-inventor on U.S. Patent
+              11,186,845 for a chloroplast-targeting nanoparticle. In industry I did
+              CRISPR/Cas9 gene editing at Cibus and host strain engineering at BASF.
             </p>
             <p>
               Today I run{" "}
@@ -363,10 +363,9 @@ export default function Home() {
               >
                 Priori Intelligence
               </a>
-              , a consulting firm that provides AI-accelerated biotech patent
-              landscape analysis and scientific due diligence. I am also preparing
-              for the patent bar and pursuing a JD with an intellectual property
-              focus, connecting bench science to the legal frameworks that protect it.
+              , a consulting firm that does AI-accelerated biotech patent landscape
+              analysis and scientific due diligence. I read the science and the
+              patent record side by side for investors, law firms and founders.
             </p>
             <p>
               I also publish as{" "}
