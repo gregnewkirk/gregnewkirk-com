@@ -51,7 +51,7 @@ const focusAreas = [
   {
     title: "Molecular biology",
     description:
-      "Nanomaterial DNA delivery to chloroplasts in my Ph.D., CRISPR/Cas9 gene editing at Cibus, and strain engineering at BASF.",
+      "Nanotechnology for DNA delivery to chloroplasts in my Ph.D., and CRISPR/Cas9 gene editing at Cibus.",
   },
   {
     title: "SAFE Foundation",
@@ -182,7 +182,7 @@ const structuredData = {
     "Product development",
     "Scientific due diligence",
     "CRISPR/Cas9",
-    "Strain engineering",
+    "Nanotechnology",
     "Plant biotechnology",
   ],
   sameAs: [
@@ -515,7 +515,7 @@ export default function Home() {
             </h2>
             <p className="mt-5 text-lg leading-8 text-white/76">
               Topics include development roadmaps, experiment and assay design, data
-              review, gene editing, strain engineering, and plant biotechnology.
+              review, gene editing, nanotechnology, and plant biotechnology.
             </p>
           </div>
           <div className="flex flex-col items-start gap-4">
