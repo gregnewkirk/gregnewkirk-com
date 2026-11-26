@@ -181,8 +181,8 @@ const structuredData = {
     "Molecular biology",
     "Product development",
     "Scientific due diligence",
-    "CRISPR/Cas9",
-    "Nanotechnology",
+    "Strain engineering",
+    "Gene delivery",
     "Plant biotechnology",
   ],
   sameAs: [
