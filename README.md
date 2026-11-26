@@ -36,4 +36,3 @@ npx vercel --prod
 
 - Replace `/public/headshot-placeholder.svg` with `/public/headshot.jpg` (update the `src` in `page.tsx`)
 - Update publication links with actual DOI URLs
-- Swap contact email when drgregshow.com workspace is ready

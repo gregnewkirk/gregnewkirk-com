@@ -51,7 +51,7 @@ const focusAreas = [
   {
     title: "Scientific communication",
     description:
-      "Live debates, public explainers, panels, and commentary that keep the science rigorous without hiding behind jargon.",
+      "Public explainers, panels, and commentary that keep the science rigorous without hiding behind jargon.",
   },
   {
     title: "Civic science",
@@ -67,13 +67,6 @@ const ventures = [
     description:
       "AI-accelerated biotech patent landscape analysis and scientific due diligence for investors, law firms, founders, and biotech teams.",
     tag: "Consulting",
-  },
-  {
-    title: "@drgregshow",
-    href: "https://drgregshow.com",
-    description:
-      "Science communication across TikTok, YouTube, and Instagram through live debates, explainers, and long-form public conversations.",
-    tag: "Media",
   },
   {
     title: "SAFE",
@@ -195,7 +188,6 @@ const structuredData = {
     "https://www.linkedin.com/in/gnewkirk/",
     "https://orcid.org/0000-0002-1154-7787",
     "https://scholar.google.com/citations?user=sI--g3gAAAAJ&hl=en",
-    "https://drgregshow.com",
     "https://prioriintelligence.com",
   ],
 };
@@ -368,15 +360,7 @@ export default function Home() {
               patent record side by side for investors, law firms and founders.
             </p>
             <p>
-              I also publish as{" "}
-              <a
-                href="https://drgregshow.com"
-                className="font-semibold text-[var(--color-accent)] underline underline-offset-4 transition-colors hover:text-[var(--color-accent-strong)]"
-              >
-                @drgregshow
-              </a>
-              , reaching millions through science debates, explainers, and public
-              conversations. Through{" "}
+              Through{" "}
               <a
                 href="https://scienceandfreedom.com"
                 className="font-semibold text-[var(--color-accent)] underline underline-offset-4 transition-colors hover:text-[var(--color-accent-strong)]"
@@ -412,12 +396,12 @@ export default function Home() {
               </h2>
             </div>
             <p className="max-w-xl text-base leading-7 text-[var(--color-muted)]">
-              Consulting, public science, and civic science are separate lanes, but
+              Consulting and civic science are separate lanes, but
               they share the same standard: evidence first, clear translation, and
               claims that can be checked.
             </p>
           </div>
-          <div className="mt-10 grid gap-5 md:grid-cols-3">
+          <div className="mt-10 grid gap-5 md:grid-cols-2">
             {ventures.map((venture) => (
               <a
                 key={venture.title}
@@ -555,14 +539,6 @@ export default function Home() {
               className="transition-colors hover:text-[var(--color-ink)]"
             >
               Priori Intelligence
-            </a>
-            <a
-              href="https://drgregshow.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition-colors hover:text-[var(--color-ink)]"
-            >
-              @drgregshow
             </a>
             <a
               href="https://scienceandfreedom.com"
