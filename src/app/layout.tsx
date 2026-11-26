@@ -9,13 +9,13 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://gregnewkirk.com"),
-  title: "Gregory M. Newkirk, PhD | Molecular Biology, Biotech IP, Science Communication",
+  title: "Gregory M. Newkirk, Ph.D. | Molecular Biology, Product Development, Due Diligence",
   description:
-    "Professional site of Gregory M. Newkirk, PhD, molecular biologist, biotech IP consultant, science communicator, and founder of Priori Intelligence.",
+    "Professional site of Gregory M. Newkirk, Ph.D., molecular biologist. Product development for science-based startups and scientific due diligence for investors through Priori Intelligence.",
   openGraph: {
-    title: "Gregory M. Newkirk, PhD",
+    title: "Gregory M. Newkirk, Ph.D.",
     description:
-      "Molecular biology, biotech IP, and science communication with a record in plant nanobiotechnology.",
+      "Product development for science-based startups and scientific due diligence for investors, from a molecular biologist with a record in plant nanobiotechnology.",
     url: "https://gregnewkirk.com",
     siteName: "Greg Newkirk",
     type: "website",
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gregory M. Newkirk, PhD",
-    description: "Molecular biology, biotech IP, and science communication.",
+    title: "Gregory M. Newkirk, Ph.D.",
+    description: "Molecular biology, product development, and scientific due diligence.",
     images: ["/images/greg-newkirk-expert.jpg"],
   },
 };

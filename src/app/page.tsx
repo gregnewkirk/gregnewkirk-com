@@ -31,32 +31,32 @@ const socials = [
 ];
 
 const credentials = [
-  { value: "PhD", label: "Molecular biology, UC Riverside" },
-  { value: "US11186845B1", label: "Granted plant biotechnology patent" },
-  { value: "Nature Nanotechnology", label: "Research in smart plant sensors" },
-  { value: "30K+", label: "Science audience across public platforms" },
+  { value: "Ph.D.", label: "Microbiology, UC Riverside" },
+  { value: "US11186845B1", label: "Co-inventor, granted U.S. patent" },
+  { value: "8", label: "Peer-reviewed publications" },
+  { value: "Nature Nanotechnology", label: "Co-author, 2019 review on smart plant sensors" },
 ];
 
 const focusAreas = [
   {
-    title: "Biotech IP and due diligence",
+    title: "Product development",
     description:
-      "Patent landscape analysis, technical diligence, and clear translation of molecular biology for investors, founders, and legal teams.",
+      "R&D milestones, experiment design and data review for science-based startups, from a working bench prototype to a minimum viable product.",
   },
   {
-    title: "Plant biotechnology",
+    title: "Scientific due diligence",
     description:
-      "CRISPR/Cas9, chloroplast delivery, nanotechnology-mediated transformation, genomics, and applied agricultural biotechnology.",
+      "Scientific and technical due diligence for investors, checking a startup's claims against the patents and the published evidence.",
   },
   {
-    title: "Scientific communication",
+    title: "Molecular biology",
     description:
-      "Public explainers, panels, and commentary that keep the science rigorous without hiding behind jargon.",
+      "Nanotechnology for DNA delivery to chloroplasts in my Ph.D., and CRISPR/Cas9 gene editing at Cibus.",
   },
   {
-    title: "Civic science",
+    title: "SAFE Foundation",
     description:
-      "Science literacy, evidence-based policy, and nonprofit work through SAFE, Science and Freedom for Everyone.",
+      "A 501(c)(3) science nonprofit I founded, with a five-person board and about three dozen volunteers.",
   },
 ];
 
@@ -65,14 +65,14 @@ const ventures = [
     title: "Priori Intelligence",
     href: "https://prioriintelligence.com",
     description:
-      "AI-accelerated biotech patent landscape analysis and scientific due diligence for investors, law firms, founders, and biotech teams.",
+      "Priori Intelligence brings scientific judgment to data and evidence, so decisions rest on what the science supports. The work: product development for science-based startups, scientific due diligence for investors, and What's In My County, a public map that brings 58 public data feeds for U.S. counties onto one map.",
     tag: "Consulting",
   },
   {
     title: "SAFE",
     href: "https://scienceandfreedom.com",
     description:
-      "Science and Freedom for Everyone, a civic science nonprofit focused on science literacy and evidence-based policy advocacy.",
+      "The Science and Freedom for Everyone (SAFE) Foundation, a 501(c)(3) science nonprofit with a five-person board and about three dozen volunteers.",
     tag: "Nonprofit",
   },
 ];
@@ -141,7 +141,7 @@ const publications = [
   },
   {
     title: "Catalytic scavenging of plant reactive oxygen species in vivo by anionic cerium oxide nanoparticles",
-    type: "Publication, first author",
+    type: "Publication, co-first author",
     citation:
       "Newkirk GM, Wu H, Santana I, Giraldo JP. Journal of Visualized Experiments (JoVE), 138, e58373",
     year: "2018",
@@ -172,17 +172,18 @@ const structuredData = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Gregory M. Newkirk",
-  honorificSuffix: "PhD",
+  honorificSuffix: "Ph.D.",
   url: "https://gregnewkirk.com",
   image: "https://gregnewkirk.com/images/greg-newkirk-expert.jpg",
-  jobTitle: "Molecular biologist and biotech IP consultant",
+  jobTitle: "Molecular biologist and R&D program lead (contract)",
   alumniOf: "University of California, Riverside",
   knowsAbout: [
     "Molecular biology",
+    "Product development",
+    "Scientific due diligence",
     "CRISPR/Cas9",
+    "Nanotechnology",
     "Plant biotechnology",
-    "Biotech patent strategy",
-    "Science communication",
   ],
   sameAs: [
     "https://www.linkedin.com/in/gnewkirk/",
@@ -275,14 +276,15 @@ export default function Home() {
         <div className="relative mx-auto flex min-h-[82svh] max-w-6xl items-center px-5 pb-10 pt-24 sm:px-8 lg:justify-end">
           <div className="max-w-2xl lg:w-[56%]">
             <p className="mb-5 text-sm font-semibold uppercase text-white/75">
-              Molecular biology | biotech IP | science communication
+              Molecular biology | product development | due diligence
             </p>
             <h1 className="text-4xl font-bold leading-tight sm:text-5xl">
-              Molecular biology for patent strategy, due diligence, and public science.
+              Product development and scientific due diligence for science-based startups.
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-8 text-white/82">
-              I help people make high-stakes biotechnology decisions: what the
-              science says, what the patent record supports, and how to explain it.
+              I run product development for science-based startups through my
+              consulting practice, Priori Intelligence. I also do scientific and
+              technical due diligence for investors.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a
@@ -334,13 +336,13 @@ export default function Home() {
               Professional brand
             </p>
             <h2 className="mt-4 text-3xl font-bold leading-tight text-[var(--color-ink)] sm:text-4xl">
-              A scientist trained at the bench, now translating biotechnology for
-              strategy, law, and public trust.
+              A scientist trained at the bench, now running product development
+              for science-based startups.
             </h2>
           </div>
           <div className="space-y-5 text-lg leading-8 text-[var(--color-body)]">
             <p>
-              I&apos;m a molecular biologist. For my PhD at UC Riverside I built
+              I&apos;m a molecular biologist. For my Ph.D. in Microbiology at UC Riverside I built
               nanomaterials that carry DNA and chemicals into the chloroplasts of
               plants and algae. That work is published in <em>Nature Nanotechnology</em>{" "}
               and <em>ACS Nano</em>, and I&apos;m a co-inventor on U.S. Patent
@@ -348,27 +350,40 @@ export default function Home() {
               CRISPR/Cas9 gene editing at Cibus and host strain engineering at BASF.
             </p>
             <p>
-              Today I run{" "}
+              I run product development for science-based startups through my
+              consulting practice,{" "}
               <a
                 href="https://prioriintelligence.com"
                 className="font-semibold text-[var(--color-accent)] underline underline-offset-4 transition-colors hover:text-[var(--color-accent-strong)]"
               >
                 Priori Intelligence
               </a>
-              , a consulting firm that does AI-accelerated biotech patent landscape
-              analysis and scientific due diligence. I read the science and the
-              patent record side by side for investors, law firms and founders.
+              . I lead the R&amp;D program at Manakin Bio, a biosensor startup, on
+              contract. I set the R&amp;D milestones with the CEO and design the
+              experiments for a team of about 10. The team has a working bench
+              prototype, and my job is getting it to a minimum viable product. I
+              also do scientific and technical due diligence for investors, checking
+              a startup&apos;s claims against the patents and the published evidence.
+              Priori Intelligence also runs{" "}
+              <a
+                href="https://whatsinmycounty.com"
+                className="font-semibold text-[var(--color-accent)] underline underline-offset-4 transition-colors hover:text-[var(--color-accent-strong)]"
+              >
+                What&apos;s In My County
+              </a>
+              , a public map that brings 58 public data feeds for U.S. counties onto
+              one map.
             </p>
             <p>
-              Through{" "}
+              I founded and run the{" "}
               <a
                 href="https://scienceandfreedom.com"
                 className="font-semibold text-[var(--color-accent)] underline underline-offset-4 transition-colors hover:text-[var(--color-accent-strong)]"
               >
-                SAFE
+                Science and Freedom for Everyone (SAFE) Foundation
               </a>
-              , I work on civic engagement through science literacy and evidence-based
-              policy advocacy.
+              , a 501(c)(3) science nonprofit with a five-person board and about
+              three dozen volunteers.
             </p>
           </div>
         </div>
@@ -436,7 +451,7 @@ export default function Home() {
             </h2>
             <p className="mt-5 text-base leading-7 text-[var(--color-muted)]">
               Selected publications, patent records, and primary links for the
-              technical foundation behind the consulting and public science work.
+              technical foundation behind the consulting work.
             </p>
           </div>
           <div className="space-y-6">
@@ -496,11 +511,11 @@ export default function Home() {
               Contact
             </p>
             <h2 className="mt-4 text-3xl font-bold leading-tight sm:text-4xl">
-              For consulting, expert commentary, panels, podcasts, and speaking.
+              For product development and scientific due diligence.
             </h2>
             <p className="mt-5 text-lg leading-8 text-white/76">
-              Topics include gene editing, CRISPR, biotech IP, plant biotechnology,
-              science communication, science policy, and civic science.
+              Topics include development roadmaps, experiment and assay design, data
+              review, gene editing, nanotechnology, and plant biotechnology.
             </p>
           </div>
           <div className="flex flex-col items-start gap-4">
