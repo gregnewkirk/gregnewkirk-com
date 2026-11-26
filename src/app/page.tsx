@@ -65,7 +65,7 @@ const ventures = [
     title: "Priori Intelligence",
     href: "https://prioriintelligence.com",
     description:
-      "Priori Intelligence brings scientific judgment to data and evidence, so decisions rest on what the science supports. The work: product development for science-based startups, scientific due diligence for investors, and What's In My County, a public map that brings 42 public data feeds for U.S. counties onto one map.",
+      "Priori Intelligence brings scientific judgment to data and evidence, so decisions rest on what the science supports. The work: product development for science-based startups, scientific due diligence for investors, and What's In My County, a public map that brings 58 public data feeds for U.S. counties onto one map.",
     tag: "Consulting",
   },
   {
@@ -371,7 +371,7 @@ export default function Home() {
               >
                 What&apos;s In My County
               </a>
-              , a public map that brings 42 public data feeds for U.S. counties onto
+              , a public map that brings 58 public data feeds for U.S. counties onto
               one map.
             </p>
             <p>
